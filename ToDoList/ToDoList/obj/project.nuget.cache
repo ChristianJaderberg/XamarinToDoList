@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "b8Bb0jQhU+3yKzvPgct2u0GNWHVRXz1DXzmEvLNmkVuT3xASHvsUsKoXqWN8zGBEuzEG2cNRzQDLd/Pfoi0mZQ==",
+  "dgSpecHash": "+qiQGKEsJLxOqRiXCkt/MtoGTaomjuJhMTO0u7x8abYBEtWOGVX/qEY9NArC4Tm4n2y+Vs0Yb2vRGI6RXbYRtQ==",
   "success": true,
   "projectFilePath": "/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList/ToDoList.csproj",
   "expectedPackageFiles": [
     "/Users/christianjaderberg/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/Users/christianjaderberg/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/christianjaderberg/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/christianjaderberg/.nuget/packages/xamarin.essentials/1.6.0-pre2/xamarin.essentials.1.6.0-pre2.nupkg.sha512",
     "/Users/christianjaderberg/.nuget/packages/xamarin.forms/4.4.0.991640/xamarin.forms.4.4.0.991640.nupkg.sha512"
   ],
   "logs": []

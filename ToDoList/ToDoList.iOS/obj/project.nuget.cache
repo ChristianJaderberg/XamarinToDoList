@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "RDa5lcb4G/Le7o6lbJyoqfh0HLgKBxKNvCKoVmtk+3i58SGiDqBjSFSA7kUJQX4M1ySaT7bFTcBpar4bHz1uOQ==",
+  "dgSpecHash": "oRGsvZX78H7geuWclQJjhA32yxkulNPYcUGxrdF6VUnN4gmJm4C/QICDOjXYAR/aQtd2adafQOgBgCVLRpiVUw==",
   "success": true,
   "projectFilePath": "/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.iOS/ToDoList.iOS.csproj",
   "expectedPackageFiles": [
+    "/Users/christianjaderberg/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/christianjaderberg/.nuget/packages/xamarin.essentials/1.6.0-pre2/xamarin.essentials.1.6.0-pre2.nupkg.sha512",
     "/Users/christianjaderberg/.nuget/packages/xamarin.forms/4.4.0.991640/xamarin.forms.4.4.0.991640.nupkg.sha512"
   ],
   "logs": []
