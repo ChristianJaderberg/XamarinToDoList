@@ -1,0 +1,12 @@
+/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList/bin/Debug/netstandard2.0/ToDoList.deps.json
+/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList/bin/Debug/netstandard2.0/ToDoList.dll
+/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList/bin/Debug/netstandard2.0/ToDoList.pdb
+/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList/obj/Debug/netstandard2.0/ToDoList.csprojAssemblyReference.cache
+/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList/obj/Debug/netstandard2.0/ToDoList.AssemblyInfoInputs.cache
+/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList/obj/Debug/netstandard2.0/ToDoList.AssemblyInfo.cs
+/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList/obj/Debug/netstandard2.0/ToDoList.csproj.CoreCompileInputs.cache
+/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList/obj/Debug/netstandard2.0/ToDoList.dll
+/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList/obj/Debug/netstandard2.0/ToDoList.pdb
+/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList/obj/Debug/netstandard2.0/Views/ToDoList.xaml.g.cs

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ToDoList"
+             xmlns:viewModels="clr-namespace:ToDoList.ViewModels;assembly=ToDoList"
+             x:Class="ToDoList.Views.ToDoList"
+>
+    <ContentPage.BindingContext>
+        <viewModels:ToDoListViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <!-- Place new controls here -->
+            <Editor Placeholder="What do you have to do?" Text="{Binding InputFieldValue}"></Editor>
+            <Button Text="Add Item" Command="{Binding AddButtonPressed }"/>
+            <ListView x:Name="ToDoItemsList" 
+                      ItemsSource="{Binding ToDoItemsList}"
+                      SelectionMode="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Tapped="FinishItem">
+                            <StackLayout>
+                                <Label 
+                                    Text="{Binding Name}"
+                                    FontSize="Large"
+                                    HorizontalTextAlignment="Center"></Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        <!--
+        <StackLayout>
+        <Editor Text="{Binding Text}"></Editor>
+        <Label Text="{Binding Text }"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               x:Name="Label1" />
+        <Slider Value="{Binding Source={x:Reference Label1}, Path=Rotation}"
+                Maximum="360" x:Name="Slider1"
+                IsEnabled="{Binding Source={x:Reference CheckBox}, Path=IsChecked}"/>
+        <CheckBox IsChecked="True"
+                  HorizontalOptions="Center"
+                  VerticalOptions="Center" 
+                  x:Name="CheckBox"/>
+        <Button Text="Add Item" Command="{Binding AddButtonPressed }"/>
+        </StackLayout>
+        -->
+    </ContentPage.Content>
+</ContentPage>
