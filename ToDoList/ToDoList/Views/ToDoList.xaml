@@ -11,6 +11,7 @@
     <ContentPage.Content>
         <StackLayout>
             <!-- Place new controls here -->
+            <Label Text="{Binding BatteryInfo}"></Label>
             <Editor Placeholder="What do you have to do?" Text="{Binding InputFieldValue}"></Editor>
             <Button Text="Add Item" Command="{Binding AddButtonPressed }"/>
             <ListView x:Name="ToDoItemsList" 
