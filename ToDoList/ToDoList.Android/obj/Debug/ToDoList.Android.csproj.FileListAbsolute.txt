@@ -43,6 +43,12 @@
 /Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/mscorlib.dll
 /Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/mscorlib.pdb
 /Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/netstandard.dll
+/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/SQLite-net.dll
+/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/SQLitePCLRaw.batteries_v2.dll
+/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/SQLitePCLRaw.core.dll
+/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/SQLitePCLRaw.lib.e_sqlite3.android.dll
+/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/SQLitePCLRaw.provider.e_sqlite3.dll
+/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/System.Buffers.dll
 /Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/System.ComponentModel.Composition.dll
 /Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/System.ComponentModel.Composition.pdb
 /Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/System.Core.dll
@@ -58,11 +64,13 @@
 /Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/System.IO.Compression.FileSystem.dll
 /Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/System.IO.Compression.FileSystem.pdb
 /Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/System.IO.Compression.pdb
+/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/System.Memory.dll
 /Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/System.Net.Http.dll
 /Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/System.Net.Http.pdb
 /Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/System.Numerics.dll
 /Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/System.Numerics.pdb
 /Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/System.pdb
+/Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/System.Runtime.CompilerServices.Unsafe.dll
 /Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/System.Runtime.dll
 /Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/System.Runtime.Serialization.dll
 /Users/christianjaderberg/Desktop/ToDoList/ToDoList/ToDoList/ToDoList.Android/obj/Debug/android/assets/System.Runtime.Serialization.pdb

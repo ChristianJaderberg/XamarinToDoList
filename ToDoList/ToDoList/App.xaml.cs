@@ -9,11 +9,22 @@ namespace ToDoList
 {
     public partial class App : Application
     {
+        public static string FilePath;
+        
         public App()
         {
             InitializeComponent();
 
             MainPage = new Views.ToDoList();
+        }
+        
+        public App(string filePath)
+        {
+            InitializeComponent();
+
+            MainPage = new Views.ToDoList();
+
+            FilePath = filePath;
         }
 
         protected override void OnStart()

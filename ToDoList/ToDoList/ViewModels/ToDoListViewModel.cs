@@ -1,8 +1,11 @@
+using System;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Windows.Input;
 using ToDoList.Models;
 using Xamarin.Forms;
 using Xamarin.Essentials;
+using SQLite;
 
 namespace ToDoList.ViewModels
 {
@@ -19,6 +22,7 @@ namespace ToDoList.ViewModels
             ToDoItemsList = new ObservableCollection<ToDoItem>();
 
             GetBatteryState();
+            // GetListFromDb();
 
             AddButtonPressed = new Command(execute: () =>
             {
@@ -77,6 +81,67 @@ namespace ToDoList.ViewModels
                 {
                     ToDoItemsList.Remove(toDoItem);
                 });
+            }
+        }
+
+        // Save current list to DB
+        public Command SaveList
+        {
+            get
+            {
+                return new Command(() =>
+                {
+                    Console.WriteLine("HOAS - Save Button Pressed");
+
+                    using (SQLiteConnection connection = new SQLiteConnection(App.FilePath))
+                    {
+                        // Reset database
+                        connection.DropTable<ToDoItem>();
+                        // Check if ToDoItemsList has any items in it to save to DB, if so save it
+                        if (ToDoItemsList.Count > 0)
+                        {
+                            connection.CreateTable<ToDoItem>();
+
+                            foreach (var item in ToDoItemsList)
+                            {
+                                connection.Insert(item);
+                                Console.WriteLine("HOAS - Inserted to database: " + item.Name);
+                            }
+                        }
+                    }
+                });
+            }
+        }
+  
+        // Read current list from DB
+        public Command ReadList
+        {
+            get
+            {
+                return new Command(() =>
+                {
+                    Console.WriteLine("HOAS - Read Button Pressed");
+
+                    GetListFromDb();
+                });
+            }
+        }
+
+        public void GetListFromDb()
+        {
+            using (SQLiteConnection connection = new SQLiteConnection(App.FilePath))
+            {
+                connection.CreateTable<ToDoItem>();
+
+                var itemsList = connection.Table<ToDoItem>().ToList();
+                        
+                ToDoItemsList.Clear();
+
+                foreach (var item in itemsList)
+                {
+                    Console.WriteLine("HOAS - Read from DB: " + item.Name);
+                    ToDoItemsList.Add(item);
+                }
             }
         }
         
