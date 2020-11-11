@@ -10,7 +10,10 @@
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="{Binding BatteryInfo}"></Label>
+            <Label Text="{Binding BatteryInfo}" 
+                   TextColor="MediumBlue"
+                   FontSize="Medium"
+                   HorizontalOptions="Center"></Label>
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <Button Text="Save List" Command="{Binding SaveList}"></Button>
                 <Button Text="Read List" Command="{Binding ReadList}"></Button>

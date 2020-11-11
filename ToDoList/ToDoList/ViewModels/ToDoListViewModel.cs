@@ -6,6 +6,7 @@ using ToDoList.Models;
 using Xamarin.Forms;
 using Xamarin.Essentials;
 using SQLite;
+using ToDoList.Services;
 
 namespace ToDoList.ViewModels
 {
@@ -15,6 +16,7 @@ namespace ToDoList.ViewModels
         public ObservableCollection<ToDoItem> ToDoItemsList { get; set; }
         private string _inputFieldValue = "";
         
+        public DatabaseHelper DbHelper = new DatabaseHelper();
         public string BatteryInfo { get; set; }
         
         public ToDoListViewModel()
@@ -22,7 +24,6 @@ namespace ToDoList.ViewModels
             ToDoItemsList = new ObservableCollection<ToDoItem>();
 
             GetBatteryState();
-            // GetListFromDb();
 
             AddButtonPressed = new Command(execute: () =>
             {
@@ -93,22 +94,7 @@ namespace ToDoList.ViewModels
                 {
                     Console.WriteLine("HOAS - Save Button Pressed");
 
-                    using (SQLiteConnection connection = new SQLiteConnection(App.FilePath))
-                    {
-                        // Reset database
-                        connection.DropTable<ToDoItem>();
-                        // Check if ToDoItemsList has any items in it to save to DB, if so save it
-                        if (ToDoItemsList.Count > 0)
-                        {
-                            connection.CreateTable<ToDoItem>();
-
-                            foreach (var item in ToDoItemsList)
-                            {
-                                connection.Insert(item);
-                                Console.WriteLine("HOAS - Inserted to database: " + item.Name);
-                            }
-                        }
-                    }
+                    DbHelper.SaveList(ToDoItemsList);
                 });
             }
         }
@@ -129,19 +115,12 @@ namespace ToDoList.ViewModels
 
         public void GetListFromDb()
         {
-            using (SQLiteConnection connection = new SQLiteConnection(App.FilePath))
+            ToDoItemsList.Clear();
+
+            foreach (var item in DbHelper.GetList())
             {
-                connection.CreateTable<ToDoItem>();
-
-                var itemsList = connection.Table<ToDoItem>().ToList();
-                        
-                ToDoItemsList.Clear();
-
-                foreach (var item in itemsList)
-                {
-                    Console.WriteLine("HOAS - Read from DB: " + item.Name);
-                    ToDoItemsList.Add(item);
-                }
+                Console.WriteLine("HOAS - Read from DB: " + item.Name);
+                ToDoItemsList.Add(item);
             }
         }
         
